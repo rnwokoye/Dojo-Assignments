@@ -1,0 +1,15 @@
+h1 {
+	color: blue;
+}
+
+.location {
+	display: inline-block;
+	border: 1px solid black;
+}
+
+#activities {
+	border: 1px solid black;
+	width: 450px;
+	height: 270px;
+	overflow: scroll;
+}

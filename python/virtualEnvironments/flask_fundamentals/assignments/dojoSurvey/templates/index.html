@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dojo Survey Index</title>
+</head>
+<body>
+	<form action='/result' method='post'>
+		<fieldset>
+			Your Name:<input type="text" name="name"><br><br>
+			Dojo Location:
+			<Select name='Dojo Location'>
+				<option value='San Jose'>San Jose</option>
+				<option value='Washington DC'>Washington DC</option>
+			</Select>
+			<br><br>	 
+			Favorite Language:
+			<Select name='Favorite Language'>
+				<option value='Python'>Python</option>
+				<option value='Java Script'>Java Script</option>
+			</Select>
+			<p>Comment(optional)</p>
+			<textarea name='comments'></textarea><br>
+			<input type="submit" value="button">
+		</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,431 @@
+Last login: Mon Dec 18 19:26:45 on ttys001
+richards-MBP:~ richardnwokoye$ pwd
+/Users/richardnwokoye
+richards-MBP:~ richardnwokoye$ ls
+Applications		Music			list
+Desktop			Pictures		main
+Documents		Public			node_modules
+Downloads		PycharmProjects		package-lock.json
+Dropbox			Samsung			pip
+Library			djangoEnv
+Movies			dwhelper
+richards-MBP:~ richardnwokoye$ cd Desktop/
+richards-MBP:Desktop richardnwokoye$ cd CodingDojo/
+richards-MBP:CodingDojo richardnwokoye$ ls
+Algorithms				News API
+CSS					Solutions
+Class vs id definition.jpeg		Test an Dev
+Django					consulting.zip
+DownloadedSolns				github
+First Demo Project.sublime-workspace	html
+Forms					html demo
+Hello_World.html			python
+JQuery					test.js
+JavaScriptsBasic			testindex.html
+My_SQL
+richards-MBP:CodingDojo richardnwokoye$ cd Django/
+richards-MBP:Django richardnwokoye$ ls
+Django Database shell:commands.pdf	main1.zip
+RandomWordGenerator			mainMultipleAppsProj.zip
+RandomWordGenerator.zip			multipleAppsProject
+RevExam					ninjagold
+djangoEnv				ninjagold.zip
+dodjo_signal				sessionWords
+dojo_signal 2				survey_Form
+hello					survey_Form.zip
+main					timeproject
+main.zip				timeproject.zip
+main1
+richards-MBP:Django richardnwokoye$ source djangoEnv/bin/activate
+(djangoEnv) richards-MBP:Django richardnwokoye$ ls
+Django Database shell:commands.pdf	main1.zip
+RandomWordGenerator			mainMultipleAppsProj.zip
+RandomWordGenerator.zip			multipleAppsProject
+RevExam					ninjagold
+djangoEnv				ninjagold.zip
+dodjo_signal				sessionWords
+dojo_signal 2				survey_Form
+hello					survey_Form.zip
+main					timeproject
+main.zip				timeproject.zip
+main1
+(djangoEnv) richards-MBP:Django richardnwokoye$ cd RevExam/
+(djangoEnv) richards-MBP:RevExam richardnwokoye$ ls
+Dojo-Signal-master	quotesApps
+belt_Exam		quotesApps.zip
+(djangoEnv) richards-MBP:RevExam richardnwokoye$ cd quotesApps
+(djangoEnv) richards-MBP:quotesApps richardnwokoye$ ls
+apps		db.sqlite3	manage.py	quotesApps
+(djangoEnv) richards-MBP:quotesApps richardnwokoye$ cd apps
+(djangoEnv) richards-MBP:apps richardnwokoye$ ls
+__init__.py	__init__.pyc	quotes
+(djangoEnv) richards-MBP:apps richardnwokoye$ cd quotes/
+(djangoEnv) richards-MBP:quotes richardnwokoye$ ls
+__init__.py	admin.pyc	models copy.py	templates	urls.pyc
+__init__.pyc	apps.py		models.py	tests.py	views.py
+admin.py	migrations	models.pyc	urls.py		views.pyc
+(djangoEnv) richards-MBP:quotes richardnwokoye$ cd ..
+(djangoEnv) richards-MBP:apps richardnwokoye$ ls
+__init__.py	__init__.pyc	quotes
+(djangoEnv) richards-MBP:apps richardnwokoye$ cd ..
+(djangoEnv) richards-MBP:quotesApps richardnwokoye$ ls
+apps		db.sqlite3	manage.py	quotesApps
+(djangoEnv) richards-MBP:quotesApps richardnwokoye$ python manage.py shell
+Python 2.7.14 (v2.7.14:84471935ed, Sep 16 2017, 12:01:12) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 5.5.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: from apps.quotes.moodels import *
+---------------------------------------------------------------------------
+ImportError                               Traceback (most recent call last)
+<ipython-input-1-02911ae922a8> in <module>()
+----> 1 from apps.quotes.moodels import *
+
+ImportError: No module named moodels
+
+In [2]: from apps.quotes.models import *
+
+In [3]: Quotes.objects.create(content="One giant step for mankind", quoted_by="s
+   ...: pace guy",posted_by="Richard")
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-3-f9e066ac67c0> in <module>()
+----> 1 Quotes.objects.create(content="One giant step for mankind", quoted_by="space guy",posted_by="Richard")
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/manager.pyc in manager_method(self, *args, **kwargs)
+     83         def create_method(name, method):
+     84             def manager_method(self, *args, **kwargs):
+---> 85                 return getattr(self.get_queryset(), name)(*args, **kwargs)
+     86             manager_method.__name__ = method.__name__
+     87             manager_method.__doc__ = method.__doc__
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/query.pyc in create(self, **kwargs)
+    389         and returning the created object.
+    390         """
+--> 391         obj = self.model(**kwargs)
+    392         self._for_write = True
+    393         obj.save(force_insert=True, using=self.db)
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/base.pyc in __init__(self, *args, **kwargs)
+    551                 # checked) by the RelatedObjectDescriptor.
+    552                 if rel_obj is not _DEFERRED:
+--> 553                     _setattr(self, field.name, rel_obj)
+    554             else:
+    555                 if val is not _DEFERRED:
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/fields/related_descriptors.pyc in __set__(self, instance, value)
+    214                     instance._meta.object_name,
+    215                     self.field.name,
+--> 216                     self.field.remote_field.model._meta.object_name,
+    217                 )
+    218             )
+
+ValueError: Cannot assign "'Richard'": "Quotes.posted_by" must be a "User" instance.
+
+In [4]: User.objects.()
+  File "<ipython-input-4-7b90415f01b4>", line 1
+    User.objects.()
+                 ^
+SyntaxError: invalid syntax
+
+
+In [5]: User.objects.all())
+  File "<ipython-input-5-f90d5388b4ec>", line 1
+    User.objects.all())
+                      ^
+SyntaxError: invalid syntax
+
+
+In [6]: User.objects.all()
+Out[6]: <QuerySet [<User: User object>, <User: User object>, <User: User object>, <User: User object>]>
+
+In [7]: User.objects.name
+Out[7]: 'objects'
+
+In [8]: User.objects.name
+Out[8]: 'objects'
+
+In [9]: User.objects.get(id=1)
+Out[9]: <User: User object>
+
+In [10]: Quotes.objects.create(content="One giant step for mankind", quoted_by="space guy",posted_by="R
+    ...: ichard")
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-10-f9e066ac67c0> in <module>()
+----> 1 Quotes.objects.create(content="One giant step for mankind", quoted_by="space guy",posted_by="Richard")
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/manager.pyc in manager_method(self, *args, **kwargs)
+     83         def create_method(name, method):
+     84             def manager_method(self, *args, **kwargs):
+---> 85                 return getattr(self.get_queryset(), name)(*args, **kwargs)
+     86             manager_method.__name__ = method.__name__
+     87             manager_method.__doc__ = method.__doc__
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/query.pyc in create(self, **kwargs)
+    389         and returning the created object.
+    390         """
+--> 391         obj = self.model(**kwargs)
+    392         self._for_write = True
+    393         obj.save(force_insert=True, using=self.db)
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/base.pyc in __init__(self, *args, **kwargs)
+    551                 # checked) by the RelatedObjectDescriptor.
+    552                 if rel_obj is not _DEFERRED:
+--> 553                     _setattr(self, field.name, rel_obj)
+    554             else:
+    555                 if val is not _DEFERRED:
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/fields/related_descriptors.pyc in __set__(self, instance, value)
+    214                     instance._meta.object_name,
+    215                     self.field.name,
+--> 216                     self.field.remote_field.model._meta.object_name,
+    217                 )
+    218             )
+
+ValueError: Cannot assign "'Richard'": "Quotes.posted_by" must be a "User" instance.
+
+In [11]: Quotes.objects.create(content="One giant step for mankind", quoted_by="space guy",posted_by="U
+    ...: ser")
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-11-1394e23f26bc> in <module>()
+----> 1 Quotes.objects.create(content="One giant step for mankind", quoted_by="space guy",posted_by="User")
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/manager.pyc in manager_method(self, *args, **kwargs)
+     83         def create_method(name, method):
+     84             def manager_method(self, *args, **kwargs):
+---> 85                 return getattr(self.get_queryset(), name)(*args, **kwargs)
+     86             manager_method.__name__ = method.__name__
+     87             manager_method.__doc__ = method.__doc__
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/query.pyc in create(self, **kwargs)
+    389         and returning the created object.
+    390         """
+--> 391         obj = self.model(**kwargs)
+    392         self._for_write = True
+    393         obj.save(force_insert=True, using=self.db)
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/base.pyc in __init__(self, *args, **kwargs)
+    551                 # checked) by the RelatedObjectDescriptor.
+    552                 if rel_obj is not _DEFERRED:
+--> 553                     _setattr(self, field.name, rel_obj)
+    554             else:
+    555                 if val is not _DEFERRED:
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/fields/related_descriptors.pyc in __set__(self, instance, value)
+    214                     instance._meta.object_name,
+    215                     self.field.name,
+--> 216                     self.field.remote_field.model._meta.object_name,
+    217                 )
+    218             )
+
+ValueError: Cannot assign "'User'": "Quotes.posted_by" must be a "User" instance.
+
+In [12]: Quotes.objects.create(content="One giant step for mankind", quoted_by="space guy",posted_by="R
+    ...: ichard")
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-12-f9e066ac67c0> in <module>()
+----> 1 Quotes.objects.create(content="One giant step for mankind", quoted_by="space guy",posted_by="Richard")
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/manager.pyc in manager_method(self, *args, **kwargs)
+     83         def create_method(name, method):
+     84             def manager_method(self, *args, **kwargs):
+---> 85                 return getattr(self.get_queryset(), name)(*args, **kwargs)
+     86             manager_method.__name__ = method.__name__
+     87             manager_method.__doc__ = method.__doc__
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/query.pyc in create(self, **kwargs)
+    389         and returning the created object.
+    390         """
+--> 391         obj = self.model(**kwargs)
+    392         self._for_write = True
+    393         obj.save(force_insert=True, using=self.db)
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/base.pyc in __init__(self, *args, **kwargs)
+    551                 # checked) by the RelatedObjectDescriptor.
+    552                 if rel_obj is not _DEFERRED:
+--> 553                     _setattr(self, field.name, rel_obj)
+    554             else:
+    555                 if val is not _DEFERRED:
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/fields/related_descriptors.pyc in __set__(self, instance, value)
+    214                     instance._meta.object_name,
+    215                     self.field.name,
+--> 216                     self.field.remote_field.model._meta.object_name,
+    217                 )
+    218             )
+
+ValueError: Cannot assign "'Richard'": "Quotes.posted_by" must be a "User" instance.
+
+In [13]: Quotes.objects.create(content="One giant step for mankind", quoted_by="space guy",posted_by="R
+    ...: ichard")
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-13-f9e066ac67c0> in <module>()
+----> 1 Quotes.objects.create(content="One giant step for mankind", quoted_by="space guy",posted_by="Richard")
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/manager.pyc in manager_method(self, *args, **kwargs)
+     83         def create_method(name, method):
+     84             def manager_method(self, *args, **kwargs):
+---> 85                 return getattr(self.get_queryset(), name)(*args, **kwargs)
+     86             manager_method.__name__ = method.__name__
+     87             manager_method.__doc__ = method.__doc__
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/query.pyc in create(self, **kwargs)
+    389         and returning the created object.
+    390         """
+--> 391         obj = self.model(**kwargs)
+    392         self._for_write = True
+    393         obj.save(force_insert=True, using=self.db)
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/base.pyc in __init__(self, *args, **kwargs)
+    551                 # checked) by the RelatedObjectDescriptor.
+    552                 if rel_obj is not _DEFERRED:
+--> 553                     _setattr(self, field.name, rel_obj)
+    554             else:
+    555                 if val is not _DEFERRED:
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/fields/related_descriptors.pyc in __set__(self, instance, value)
+    214                     instance._meta.object_name,
+    215                     self.field.name,
+--> 216                     self.field.remote_field.model._meta.object_name,
+    217                 )
+    218             )
+
+ValueError: Cannot assign "'Richard'": "Quotes.posted_by" must be a "User" instance.
+
+In [14]: User.objects.all()
+Out[14]: <QuerySet [<User: User object>, <User: User object>, <User: User object>, <User: User object>]>
+
+In [15]: all_users = User.objects.all()
+
+In [16]: for user in all_users:
+    ...:     print user.name
+    ...:     
+richard
+Desta
+Tony
+Desta
+
+In [17]: Quotes.objects.create(content="One giant step for mankind", quoted_by="space guy",posted_by="R
+    ...: ichard")
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-17-f9e066ac67c0> in <module>()
+----> 1 Quotes.objects.create(content="One giant step for mankind", quoted_by="space guy",posted_by="Richard")
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/manager.pyc in manager_method(self, *args, **kwargs)
+     83         def create_method(name, method):
+     84             def manager_method(self, *args, **kwargs):
+---> 85                 return getattr(self.get_queryset(), name)(*args, **kwargs)
+     86             manager_method.__name__ = method.__name__
+     87             manager_method.__doc__ = method.__doc__
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/query.pyc in create(self, **kwargs)
+    389         and returning the created object.
+    390         """
+--> 391         obj = self.model(**kwargs)
+    392         self._for_write = True
+    393         obj.save(force_insert=True, using=self.db)
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/base.pyc in __init__(self, *args, **kwargs)
+    551                 # checked) by the RelatedObjectDescriptor.
+    552                 if rel_obj is not _DEFERRED:
+--> 553                     _setattr(self, field.name, rel_obj)
+    554             else:
+    555                 if val is not _DEFERRED:
+
+/Users/richardnwokoye/Desktop/CodingDojo/Django/djangoEnv/lib/python2.7/site-packages/django/db/models/fields/related_descriptors.pyc in __set__(self, instance, value)
+    214                     instance._meta.object_name,
+    215                     self.field.name,
+--> 216                     self.field.remote_field.model._meta.object_name,
+    217                 )
+    218             )
+
+ValueError: Cannot assign "'Richard'": "Quotes.posted_by" must be a "User" instance.
+
+In [18]: 
+
+In [18]: User.objects.get(id=1)
+Out[18]: <User: User object>
+
+In [19]: r = User.objects.get(id=1)
+
+In [20]: r.name
+Out[20]: u'richard'
+
+In [21]: r.email
+Out[21]: u'ruba@mail.com'
+
+In [22]: Quotes.objects.create(content="One giant step for mankind", quoted_by="space guy",posted_by=r
+    ...: )
+Out[22]: <Quotes: Quotes object>
+
+In [23]: Quotes.objects.all()
+Out[23]: <QuerySet [<Quotes: Quotes object>]>
+
+In [24]: Quotes.objects.create(content="Two giant step for mankind", quoted_by="@nd space guy",posted_b
+    ...: y=User.obejects.get(id=2))
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-24-270ff5d5083e> in <module>()
+----> 1 Quotes.objects.create(content="Two giant step for mankind", quoted_by="@nd space guy",posted_by=User.obejects.get(id=2))
+
+AttributeError: type object 'User' has no attribute 'obejects'
+
+In [25]: Quotes.objects.create(content="Two giant step for mankind", quoted_by="@nd space guy",posted_b
+    ...: y=User.objects.get(id=2))
+Out[25]: <Quotes: Quotes object>
+
+In [26]: Quotes.objects.all()
+Out[26]: <QuerySet [<Quotes: Quotes object>, <Quotes: Quotes object>]>
+
+In [27]: Quotes.objects.get(id=1)
+Out[27]: <Quotes: Quotes object>
+
+In [28]: x = Quotes.objects.get(id=1)
+
+In [29]: x.content
+Out[29]: u'One giant step for mankind'
+
+In [30]: x = quote1
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-30-66a1b115d5e9> in <module>()
+----> 1 x = quote1
+
+NameError: name 'quote1' is not defined
+
+In [31]: x = "quote1"
+
+In [32]: quote1.content
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-32-1f899f79b6d2> in <module>()
+----> 1 quote1.content
+
+NameError: name 'quote1' is not defined
+
+In [33]: x.content
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-33-1c74045034bf> in <module>()
+----> 1 x.content
+
+AttributeError: 'str' object has no attribute 'content'
+
+In [34]: x = Quotes.objects.get(id=1)
+
+In [35]: quote1 = x
+
+In [36]: quote1.content
+Out[36]: u'One giant step for mankind'
+
+In [37]: 

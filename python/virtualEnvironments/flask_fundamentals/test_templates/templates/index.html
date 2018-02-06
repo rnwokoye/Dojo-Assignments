@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> My First Flask Template</title>
+    </head>
+    <body>
+        <h3>My first Flask template with embedded python-like code</h3>
+        <!--this code below will output the value of out phrase variable-->
+        <p>Phrase: {{phrase}}</p>
+        <!--this will output the value of our times variable-->
+        <p>Times: {{times}}</p>
+        <!--this next code will embed expressions such as a for loop-->
+        <!--The syntax-->
+        {% for x in range(0,times): %}
+        <p>{{ phrase }}</p>
+        {% endfor %}
+        <!--This is example for embedding an if statement-->
+        {% if phrase == "hello" %}
+        <p> The phrase says hello</p>
+        {% endif %}
+    </body>
+
+</html>

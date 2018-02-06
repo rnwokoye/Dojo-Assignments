@@ -1,0 +1,20 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.wrapper {
+	width: 960px;
+	height: 1000px;
+}
+
+
+img {
+	width: 360px;
+	/*display: inline-block;*/
+	display: block;
+}
+.ninja_box {
+	width: 960px;
+	padding: 50px;
+	vertical-align: top;
+}

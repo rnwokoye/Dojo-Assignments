@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Friends</title>
+</head>
+<body>
+
+  <h2> All Friends </h2>
+
+   <!-- {{ Squad }}   shows me what is passed to index fro py file -->
+<table border=1px, style="width:50%">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Friend Since</th>
+  </tr>
+  
+  {% for friend in Squad %}
+  <tr>
+   <!-- <p> {{friend}} </p> -->
+    <td> {{friend['name']}}</td>
+    <td> {{friend['age']}}</td>
+    <td> {{friend['friend_since']}}</td>
+  </tr>
+
+  {% endfor %}
+
+
+</table>
+
+  <h2>Add a Friend:</h2>
+  
+<form action="/new" method="post">
+  name:<br>
+  <input type="text" name="name">
+  <br>
+  Age:<br>
+  <input type="text" name="age">
+  <br>
+  Friend Since:<br>
+  <input type="text" name="friend_since">
+  <br>
+  <!-- Year:<br>
+  <input type="date" name="date">
+  <br> -->
+  <input type="submit" value="Submit">
+</form> 
+</body>
+</html>

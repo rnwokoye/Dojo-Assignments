@@ -1,0 +1,5 @@
+com/project/relationships/controllers/RouteController.class
+com/project/relationships/models/User.class
+com/project/relationships/repositories/UserRepository.class
+com/project/relationships/controllers/UserController.class
+com/project/relationships/services/UserService.class

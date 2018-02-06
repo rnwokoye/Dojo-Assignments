@@ -1,0 +1,307 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"text-li",
+				"text-decoration-style"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"boder",
+				"border"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"spa",
+				"border-spacing"
+			],
+			[
+				"left",
+				"padding-left"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"magin",
+				"margin-right"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/richardnwokoye/Desktop/CodingDojo/Yellow Belt Exam/ybtestmain.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/python/python_main.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/DojoBuy/style.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/DojoBuy/index.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/python/python_bsd.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Yellow Belt Exam/Yellow_Belt_ExamTesting.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/html/html.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Yellow Belt Exam/main.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/html/main.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Yellow Belt Exam/Yellow_Belt_Exam.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/JavaScripts Basic/JavaScriptAssign.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/JavaScripts Basic/JavaScriptAssign.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Test an Dev/test Websites/testmain.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Test an Dev/test Websites/testWebsite.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/portfolio assignment/Portfolio_images/Portfolio.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Solutions/Portfolio Assign/main.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Solutions/Portfolio Assign/portfolio.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/consulting/index_4.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/consulting/style_4.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Solutions/DisplaySolns.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Solutions/DisplayYourBlocksSoln.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/portfolio assignment/Portfolio_images/Portfl.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/portfolio assignment/styles4.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/portfolio assignment/portfolioAssign.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/css_overview/css-overview.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/css_overview/css_1.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/portfolio assignment/practic.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/portfolio assignment/practic.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/block_inline/plottingblocks.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/block_inline/Plotting Your Blocks.html",
+		"/Users/richardnwokoye/Downloads/DojoBuy-master/index.html",
+		"/Users/richardnwokoye/Downloads/DojoBuy-master/style.css",
+		"/Users/richardnwokoye/Desktop/test.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/style.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/layouts/css_3.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/layouts/layouts.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/block_inline/css_2.css",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/block_inline/block-inline.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/CSS/layouts/testindex2.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/testindex.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Forms/div & span tags.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Solutions/My Registeration Form Solution.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Forms/My Registeration Form.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/html demo/Indentation Practile.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Forms/test.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Forms/formsLesson.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Hello_World.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/html demo/index.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/html demo/Atom Sublime.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/html demo/head.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/Forms/FullForm.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/html demo/index2.html",
+		"/Users/richardnwokoye/Desktop/CodingDojo/html demo/Atom, Sublime",
+		"/Users/richardnwokoye/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/richardnwokoye/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "python_bsd.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

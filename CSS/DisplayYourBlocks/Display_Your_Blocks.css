@@ -1,0 +1,10 @@
+*{
+	margin: 10px;
+ padding: 10px;
+ vertical-align: top;
+ border-color: green;
+ /*background-color: blue; */
+}
+#column{
+	background-color: yellow;
+}

@@ -1,0 +1,12 @@
+p{
+	color:gold;
+}
+#important{
+	font-size:36px;
+	boder:20px solid black;
+}
+.info{
+	background-color: green;
+	border:1px solid black;
+	
+}

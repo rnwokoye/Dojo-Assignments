@@ -1,0 +1,58 @@
+*{
+	/*margin:10px;*/
+	/*padding:10px;*/
+	border: 1px dashed red;
+	/*background-color: red;*/
+}
+.wrapper{
+	width:1000px;
+	height:1000px;
+	margin:0 auto;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	background-color:#684F5B;
+	border-color:green;
+}
+.header{
+	border: 1px solid yellow;
+	padding:15px;
+	background-color: #F9F9F9;
+	height: 50px;
+	width:900px;
+}
+.RecBox{
+	width:900px;
+	height:250px;
+}
+.squareBox1{
+	width: 300px;
+	height: 200px;
+	float:left;
+	background-color:blue;
+	display:inline-block;
+}
+.squareBox2{
+	width: 300px;
+	height:200px;
+	float:right;
+	background-color:grey;
+	display:inline-block;
+}
+.RectBox1{
+	width:300px;
+	height:600px;
+	background-color:green;
+	display:inline-block
+}
+.RectBox2{
+	width:300px;
+	height:600px;
+	background-color:white;
+	display:inline-block
+}
+.RectBox3{
+	width:300px;
+	height:600px;
+	background-color:green;
+	display:inline-block
+}

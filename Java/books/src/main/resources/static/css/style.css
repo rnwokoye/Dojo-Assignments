@@ -1,0 +1,20 @@
+ .wrapper{
+
+	width:860px;
+	height:600px;
+	border: 1px solid black;
+	padding: 20px;
+	
+}
+
+    h3{
+    color :blue;
+    }
+    
+    table {
+    border-collapse: collapse;
+    margin: auto;
+}
+    table, th, td {
+   border: 1px solid black;
+} 

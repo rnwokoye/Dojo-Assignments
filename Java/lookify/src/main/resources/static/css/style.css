@@ -1,0 +1,29 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	
+}
+
+
+.wrapper {
+
+	width:960px;
+	border: 5px solid black;
+	margin: auto;
+	background-color: blue;
+	padding: 15px; 
+
+}
+
+    h3 {
+    color :blue;
+    }
+    
+    table {
+    border-collapse: collapse;
+    padding: 5px; 
+}
+    table, th, td {
+   border: 1px solid black;
+}

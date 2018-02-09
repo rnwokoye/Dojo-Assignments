@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dojos</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<a href="/">home</a>
+</head>
+<body>
+		<h1>Create a new Dojo </h1>
+
+		<form style="width:600px;" method="POST" action="newdojos">
+			<fieldset>
+				<legend> Dojo</legend>
+			<p>Name: <input type="text" name="name"</p>
+			<p>Email: <input type="text" name="email"></p>
+			<p>Password: <input type="password" name="password"></p>
+			<p>Dojo Location: <select name="dojo_loc">
+				<option value="washington"> Wash DC</option>
+				<option value="miami">Miami</option>
+				<option value="virginia">Virginia</option>
+			</select></p>
+			<p><input type="submit" value="create dojo"></p>
+			</fieldset>
+		</form>
+
+</body>
+</html>

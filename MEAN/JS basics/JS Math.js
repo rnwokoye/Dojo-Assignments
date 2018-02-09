@@ -1,7 +1,5 @@
 function zero_negativity(arr){
     for(let i = 0; i < arr.length; i++){
-        console.log(arr.length);
-        console.log(arr[4]);
         if(arr[i] < 0){
             return true;
         }
@@ -27,10 +25,16 @@ console.log(how_many_even([2,4,8,5,9]));
 function dummyArr(n){
     let arr = [];
     for(let i=0;i<n;i++){
-        arr[0] = Math.random()*10;
-    }
-}return arr;
+        arr[i] = Math.floor(Math.random()*10);   
+    }return arr;
+}
 console.log(dummyArr(4));
+
+function rand_choice(arr){
+    let arr = []; 
+    return arr[Math.floor(Math.random() * arr.length) + 0] 
+}
+console.log(rand_choice[2,4,1]);
 
 
 

@@ -1,0 +1,25 @@
+<!-- <h1>Welcome to form submission</h1>
+
+<form action='/index' method='post'>
+    <input type='text' name='first_name' />
+
+    <button type="submit"> Send </button>
+</form> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>users</title>
+</head>
+<body>
+    <h2>Here all all users</h2>
+    <% for (let x in users) { %>
+        <h3>Name: <%= users[x].name %></h3>
+        <h4>Email: <%= users[x].email %></h4>
+        <hr>
+    <% } %>
+</body>
+</html>

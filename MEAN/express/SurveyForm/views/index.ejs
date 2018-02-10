@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+</head>
+<body>
+	<h1>Survey Form</h1>
+
+	
+	<hr>
+
+	<form action="/process" method='post'>
+		Your Name: <input type="text" name="your_name"><br><br>
+		Dojo Location: <select name="dojo_location">
+			<option value="Washington_DC">Washington_DC</option>
+			<option value="Baltimore">Baltimore</option>
+			<option value="Miami">Miami</option>
+		</select><br><br>
+		Favorite Language: <select name="favorite_lang"><br>
+			<option value="JavaScript">JavaScript</option>
+			<option value="python">Python</option>
+            <option value="C++">C++</option>
+            <option value="Node">Node</option>
+		</select><br><br>
+		Comment (optional):<textarea name="comments"></textarea><br><br>
+		<input type="submit" value="submit">
+
+	</form>	
+
+
+
+</body>
+</html>

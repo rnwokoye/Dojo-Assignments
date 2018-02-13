@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1>The Chipmunk Dashboard</h1>
+        <button><a href="/chipmunks/new">Create Chipmunk</a></button>
+        
+        <% for (i in chipmunks) { %>
+            <p><%=chipmunks[i].name %></p>
+            <p><%=chipmunks[i].age %></p>
+            <p><%=chipmunks[i].color %></p>
+            <p> <a href="/chipmunks/<%=chipmunks[i].id %>">Show</a> </p>
+            <p> <a href="/chipmunks/edit/<%=chipmunks[i].id %>">Edit</a> </p>
+            <p> <a href="/chipmunks/destroy/<%=chipmunks[i].id %>">Delete</a> </p>
+            <hr>
+        <% } %>
+ 
+</body>
+</html>
